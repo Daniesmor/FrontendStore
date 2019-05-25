@@ -1,0 +1,36 @@
+html {
+    height: 100%
+}
+body {
+    font-family: Arial,  Arial, Helvetica, sans-serif;
+    height: 100%;
+background: #c65ec7; /* Old browsers */
+background: -moz-linear-gradient(top,  #c65ec7 52%, #a849a3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c65ec7 52%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c65ec7 52%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c65ec7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+img  {
+    max-width: 100%; /**Para responsive**/
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.hero {
+    margin-bottom: 40px;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.lista-productos {
+    margin-top: 40px;
+}
