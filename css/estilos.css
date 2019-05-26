@@ -1,6 +1,20 @@
 html {
-    height: 100%
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html {
+    box-sizing: border-box;
+    height: 100%;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
 body {
     font-family: Arial,  Arial, Helvetica, sans-serif;
     height: 100%;
@@ -31,6 +45,54 @@ h2 {
     text-transform: uppercase;
     color: white;
 }
+p {
+    color: white;
+}
 .lista-productos {
     margin-top: 40px;
+    padding: 0;
+    list-style: none;
+
+}
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .lista-productos li {
+        width: 33.3%;
+    }
+}
+
+.lista-productos li img{
+    border: 10px solid rgba(128, 1, 195, .450);
+    transition: border-color .3s ease-in-out;
+}
+.lista-productos li img:hover {
+    border: 10px solid rgba(128, 1, 195, 1);   
+}
+.lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px  0;
+}
+.lista-productos li p span {
+    color: #FFCE00;
+    font-size: 40px;
+}
+.boton {
+    background-color: #FFCE00;
+    padding: 10px  40px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8001c3;
+    transition:  background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: #EBBC00;
 }
